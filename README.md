@@ -1,4 +1,4 @@
-# EduPulse Nexus
+# EduPulse Nexus :-
 
 EduPulse Nexus is a Java Swing student management project with three pages:
 
