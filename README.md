@@ -16,12 +16,6 @@ Your API key is **not stored anywhere in the code**. The app reads it only from 
 $env:GEMINI_API_KEY="your_api_key_here"
 ```
 
-## Important for GitHub
-
-- Do not paste your API key into source files.
-- Do not commit `.env` files or secret notes.
-- The included `.gitignore` already ignores common secret and build-output files.
-
 ## Gemini note
 
 The chatbot now uses a direct HTTPS request to Gemini, so you do not need to add the Gemini Java SDK jar just to use chat.
