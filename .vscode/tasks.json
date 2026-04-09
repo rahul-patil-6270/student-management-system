@@ -1,0 +1,38 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile Student Management",
+      "type": "shell",
+      "command": "javac",
+      "args": [
+        "-cp",
+        ".;lib/*",
+        "Main.java",
+        "dao\\StudentDAO.java",
+        "gui\\MainFrame.java",
+        "model\\Student.java",
+        "util\\DBConnection.java"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": "$javac"
+    },
+    {
+      "label": "Run Student Management",
+      "type": "shell",
+      "command": "javaw",
+      "args": [
+        "-cp",
+        ".;lib/*",
+        "Main"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "dependsOn": "Compile Student Management",
+      "problemMatcher": []
+    }
+  ]
+}
